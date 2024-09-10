@@ -42,7 +42,7 @@ export class TasksService {
 
   addTask(taskData: NewTaskData, userId: string) {
     this.tasks.unshift({
-      id: new Date().getDate().toString(),
+      id: new Date().getTime().toString(),
       userId: userId,
       title: taskData.title,
       summary:taskData.summary,
